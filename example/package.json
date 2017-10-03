@@ -24,9 +24,10 @@
     "@sanity/default-layout": "^0.114.1",
     "@sanity/default-login": "^0.113.7",
     "@sanity/desk-tool": "^0.114.1",
-    "@sanity/latex-input": "0.0.1",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-ace": "^5.2.2",
+    "react-dom": "^15.6.1",
+    "sanity-plugin-latex-input": "0.0.1"
   },
   "devDependencies": {}
 }
