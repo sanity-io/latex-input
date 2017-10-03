@@ -1,5 +1,4 @@
 .DS_Store
-package-lock.json
 lib
 node_modules
 example/node_modules
