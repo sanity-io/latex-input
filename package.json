@@ -42,6 +42,7 @@
     "@sanity/form-builder": "^0.114.1",
     "katex": "^0.8.3",
     "prop-types": "^15.5.10",
-    "react-ace": "^5.2.2"
+    "react-ace": "5.0.1",
+    "react-katex": "^1.2.0"
   }
 }

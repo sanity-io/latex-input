@@ -1,11 +1,11 @@
 import React, {PureComponent} from 'react'
 import PropTypes from 'prop-types'
 import AceEditor from 'react-ace'
+
 import {get} from 'lodash'
 import PatchEvent, {set, unset, setIfMissing} from '@sanity/form-builder/PatchEvent'
 import FormField from 'part:@sanity/components/formfields/default'
 import Fieldset from 'part:@sanity/components/fieldsets/default'
-import styles from './latexInput.css'
 import {ACE_EDITOR_PROPS, ACE_SET_OPTIONS, SUPPORTED_THEMES, DEFAULT_THEME} from '../config'
 
 import 'brace/mode/latex'

@@ -1,11 +1,11 @@
-import Preview from './components/Preview'
+import LatexPreview from './components/LatexPreview'
 
 export default {
   name: 'latex',
   type: 'object',
   fields: [
     {
-      title: 'Latex',
+      title: 'LaTeX content',
       name: 'body',
       type: 'text'
     }
@@ -14,6 +14,9 @@ export default {
     select: {
       body: 'body'
     },
-    component: Preview
+    prepare(selection) {
+      return selection
+    },
+    component: LatexPreview
   }
 }

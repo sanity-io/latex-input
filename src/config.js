@@ -1,6 +1,6 @@
 export const SUPPORTED_THEMES = ['github', 'monokai', 'terminal', 'tomorrow']
 
-export const DEFAULT_THEME = 'tomorrow'
+export const DEFAULT_THEME = 'github'
 
 export const ACE_SET_OPTIONS = {
   useSoftTabs: true,
