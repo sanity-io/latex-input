@@ -1,7 +1,8 @@
 import React, {PureComponent} from 'react'
 import PropTypes from 'prop-types'
+import katex from 'katex'
 import styles from './LatexPreview.css'
-import {BlockMath} from 'react-katex'
+import katexStyles from './Katext.css'
 
 export default class LatexPreview extends PureComponent {
   static propTypes = {
@@ -27,12 +28,9 @@ export default class LatexPreview extends PureComponent {
     if (!body) {
       return <div>empty</div>
     }
-    const renderError = error => {
-      return <b>Failed to render latex: {error.name}</b>
-    }
-    return (
-      <BlockMath math={body} renderError={renderError} />
-    )
+    const renderedMath = katex.renderToString(body)
+    // console.log(renderedMath)
+    return <div className={katexStyles.katex} dangerouslySetInnerHTML={{__html: renderedMath}} />
   }
 
   render() {
