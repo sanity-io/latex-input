@@ -48,6 +48,7 @@ export default class CodeInput extends PureComponent {
   }
 
   handleContentChange = content => {
+    console.log('handleContentChange', content)
     const {type, onChange} = this.props
     const path = ['body']
 

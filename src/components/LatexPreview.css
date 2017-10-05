@@ -4,3 +4,23 @@
 
 .defaultPreviewContainer {
 }
+
+annotation {
+  display: none;
+}
+
+.root :global {
+  @import './Katex.css';
+}
+
+.rootMathMl :global(.katex-html) {
+  display: none;
+}
+
+.rootMathMl :global(.katex-mathml) {
+  position: relative;
+  clip: auto;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}

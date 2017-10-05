@@ -15,12 +15,6 @@ export default {
       of: [
         {
           type: 'block',
-          styles: [],
-          lists: [],
-          marks: {
-            decorators: [],
-            annotations: []
-          }
         },
         {type: 'latex', title: 'Latex'},
         {type: 'image', title: 'Image'}
