@@ -17,13 +17,13 @@
     "input"
   ],
   "dependencies": {
-    "@sanity/base": "0.116.0-alpha.98a84961",
-    "@sanity/components": "0.116.0-alpha.98a84961",
-    "@sanity/core": "0.116.0-alpha.98a84961",
-    "@sanity/date-input": "0.116.0-alpha.98a84961",
-    "@sanity/default-layout": "0.116.0-alpha.98a84961",
-    "@sanity/default-login": "0.116.0-alpha.98a84961",
-    "@sanity/desk-tool": "0.116.0-alpha.98a84961",
+    "@sanity/base": "^0.119.0",
+    "@sanity/components": "^0.119.0",
+    "@sanity/core": "^0.119.0",
+    "@sanity/date-input": "^0.119.0",
+    "@sanity/default-layout": "^0.119.0",
+    "@sanity/default-login": "^0.119.0",
+    "@sanity/desk-tool": "^0.119.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
   },
