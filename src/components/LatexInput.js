@@ -63,6 +63,8 @@ export default class CodeInput extends PureComponent {
     }
   }
 
+  focus() {}
+
   handleEditorLoad = editor => {
     this.editor = editor
     this.editor.focus()
