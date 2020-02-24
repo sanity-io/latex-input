@@ -17,7 +17,7 @@
       "description": "An editor for code in sanity"
     },
     {
-      "implements": "part:@sanity/form-builder/input/latex/schema",
+      "implements": "part:@sanity/base/schema-type",
       "path": "schema.js"
     }
   ]
