@@ -97,10 +97,8 @@ export default class CodeInput extends PureComponent {
   render() {
     const {type, level} = this.props
     return (
-      <Fieldset legend={type.title} description={type.description}>
-        <FormField label={type.title} level={level + 1}>
-          {this.renderEditor()}
-        </FormField>
+      <Fieldset legend={"Input"} description={type.description}>
+        <FormField level={level + 1}>{this.renderEditor()}</FormField>
       </Fieldset>
     )
   }

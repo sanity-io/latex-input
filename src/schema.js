@@ -1,16 +1,25 @@
-import createSchema from "part:@sanity/base/schema-creator";
-import schemaTypes from "all:part:@sanity/base/schema-type";
+import LatexPreview from "./components/LatexPreview";
+import LatexInput from "./components/LatexInput";
 
-import page from "./page";
-import settings from "./setting";
-import article from "./article";
-import medium from "./medium";
-
-/**
- * Schema
- */
-
-export default createSchema({
-  name: "default",
-  types: schemaTypes.concat([page, article, medium, settings])
-});
+export default {
+  name: "latex",
+  title: "LaTeX",
+  type: "object",
+  inputComponent: LatexInput,
+  fields: [
+    {
+      title: "LaTeX content",
+      name: "body",
+      type: "text"
+    }
+  ],
+  preview: {
+    select: {
+      body: "body"
+    },
+    prepare(selection) {
+      return selection;
+    },
+    component: LatexPreview
+  }
+};
