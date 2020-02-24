@@ -85,7 +85,7 @@ export default class CodeInput extends PureComponent {
         width="100%"
         onChange={this.handleContentChange}
         name={`${this._inputId}__aceEditor`}
-        value={(value && value.code) || ''}
+        value={(value && value.body) || ''}
         onLoad={this.handleEditorLoad}
         tabSize={2}
         setOptions={ACE_SET_OPTIONS}
