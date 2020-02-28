@@ -1,8 +1,11 @@
-import LatexPreview from './components/LatexPreview'
+import LatexPreview from './components/LatexPreview';
+import LatexInput from './components/LatexInput';
 
 export default {
   name: 'latex',
+  title: 'LaTeX',
   type: 'object',
+  inputComponent: LatexInput,
   fields: [
     {
       title: 'LaTeX content',
@@ -19,4 +22,4 @@ export default {
     },
     component: LatexPreview
   }
-}
+};

@@ -9,7 +9,6 @@ import Fieldset from 'part:@sanity/components/fieldsets/default'
 import {ACE_EDITOR_PROPS, ACE_SET_OPTIONS, SUPPORTED_THEMES, DEFAULT_THEME} from '../config'
 
 import 'brace/mode/latex'
-
 import 'brace/theme/github'
 import 'brace/theme/monokai'
 import 'brace/theme/terminal'
@@ -48,7 +47,6 @@ export default class CodeInput extends PureComponent {
   }
 
   handleContentChange = content => {
-    console.log('handleContentChange', content)
     const {type, onChange} = this.props
     const path = ['body']
 
@@ -62,8 +60,6 @@ export default class CodeInput extends PureComponent {
       this.handleToggleSelectLine(row + 1) // Ace starts at row 0
     }
   }
-
-  focus() {}
 
   handleEditorLoad = editor => {
     this.editor = editor
@@ -85,7 +81,7 @@ export default class CodeInput extends PureComponent {
         width="100%"
         onChange={this.handleContentChange}
         name={`${this._inputId}__aceEditor`}
-        value={(value && value.code) || ''}
+        value={(value && value.body) || ''}
         onLoad={this.handleEditorLoad}
         tabSize={2}
         setOptions={ACE_SET_OPTIONS}
@@ -97,11 +93,16 @@ export default class CodeInput extends PureComponent {
   render() {
     const {type, level} = this.props
     return (
-      <Fieldset legend={type.title} description={type.description}>
-        <FormField label={type.title} level={level + 1}>
-          {this.renderEditor()}
-        </FormField>
+      <Fieldset legend={'Input'} description={type.description}>
+        <FormField level={level + 1}>{this.renderEditor()}</FormField>
       </Fieldset>
     )
+  }
+}
+
+CodeInput.defaultProps = {
+  value: {
+    type: '',
+    latex: ''
   }
 }
