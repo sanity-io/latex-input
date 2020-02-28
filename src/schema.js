@@ -1,24 +1,24 @@
-import LatexPreview from "./components/LatexPreview";
-import LatexInput from "./components/LatexInput";
+import LatexPreview from './components/LatexPreview';
+import LatexInput from './components/LatexInput';
 
 export default {
-  name: "latex",
-  title: "LaTeX",
-  type: "object",
+  name: 'latex',
+  title: 'LaTeX',
+  type: 'object',
   inputComponent: LatexInput,
   fields: [
     {
-      title: "LaTeX content",
-      name: "body",
-      type: "text"
+      title: 'LaTeX content',
+      name: 'body',
+      type: 'text'
     }
   ],
   preview: {
     select: {
-      body: "body"
+      body: 'body'
     },
     prepare(selection) {
-      return selection;
+      return selection
     },
     component: LatexPreview
   }
