@@ -13,26 +13,28 @@ You may now use the type name `latex` in your schema, such as in portable text.
 ## Example schema definition for portable text
 
 ```
+import React from 'react'
+const mathInlineIcon = () => (
+  <span>
+    <span style={{ fontWeight: 'bold' }}>∑</span>b
+  </span>
+)
+const mathIcon = () => <span style={{ fontWeight: 'bold' }}>∑</span>
+
 export default {
-  name: 'mathSnippet',
-  title: 'Math Snippet',
-  type: 'object',
-  fields: [
+  name: 'portableTextWithLatex',
+  type: 'array',
+  title: 'Body',
+  of: [
     {
-      title: 'Title',
-      name: 'title',
-      type: 'string'
-    },
-    {
-      title: 'Content',
-      name: 'content',
-      type: 'array',
+      type: 'block',
+      title: 'Block',
       of: [
-        {type: 'block'},
-        {type: 'latex', title: 'LaTeX'}
-      ]
-    }
-  ]
+        { type: 'latex', icon: mathInlineIcon, title: 'Inline math' },
+      ],
+    },
+    { type: 'latex', icon: mathIcon, title: 'Math block' },
+  ],
 }
 ```
 
