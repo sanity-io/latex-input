@@ -5,20 +5,8 @@
   },
   "parts": [
     {
-      "name": "part:@sanity/form-builder/input/latex",
-      "description": "An editor for code in sanity"
-    },
-    {
-      "implements": "part:@sanity/form-builder/input/latex",
-      "path": "components/index.js"
-    },
-    {
-      "name": "part:@sanity/form-builder/input/latex/schema",
-      "description": "An editor for code in sanity"
-    },
-    {
-      "implements": "part:@sanity/form-builder/input/latex/schema",
-      "path": "schema.js"
+      "implements": "part:@sanity/base/schema-type",
+      "path": "index.js"
     }
   ]
 }

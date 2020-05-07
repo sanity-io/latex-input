@@ -8,24 +8,9 @@ https://sanity.io
 sanity install sanity-plugin-latex-input
 ```
 
-Then require the part and add it to your schema like any other type:
+You may now use the type name `latex` in your schema, such as in portable text.
 
-```
-import createSchema from 'part:@sanity/base/schema-creator'
-import schemaTypes from 'all:part:@sanity/base/schema-type'
-import latex from 'part:@sanity/form-builder/input/latex/schema'
-
-export default createSchema({
-  name: 'myschema',
-  types: schemaTypes // Built-in types
-    // Our custom types
-    .concat([
-      latex
-    ])
-})
-```
-
-Example schema definition using latex math input
+## Example schema definition for portable text
 
 ```
 export default {
@@ -44,9 +29,11 @@ export default {
       type: 'array',
       of: [
         {type: 'block'},
-        {type: 'latex', title: 'Latex'}
+        {type: 'latex', title: 'LaTeX'}
       ]
     }
   ]
 }
 ```
+
+The Portable Text editor will render a preview of the contents with KaTeX.
