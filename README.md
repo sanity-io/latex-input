@@ -2,8 +2,8 @@
 
 https://sanity.io
 
-
 ## Usage
+
 ```
 sanity install sanity-plugin-latex-input
 ```
@@ -12,16 +12,21 @@ Then require the part and add it to your schema like any other type:
 
 ```
 import createSchema from 'part:@sanity/base/schema-creator'
-import mathSnippet from './mathSnippet'
+import schemaTypes from 'all:part:@sanity/base/schema-type'
 import latex from 'part:@sanity/form-builder/input/latex/schema'
 
 export default createSchema({
-  name: 'default',
-  types: [mathSnippet, latex]
+  name: 'myschema',
+  types: schemaTypes // Built-in types
+    // Our custom types
+    .concat([
+      latex
+    ])
 })
 ```
 
 Example schema definition using latex math input
+
 ```
 export default {
   name: 'mathSnippet',

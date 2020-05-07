@@ -1,4 +1,6 @@
 .DS_Store
-lib
 node_modules
 example/node_modules
+*.log
+.cache
+dist
