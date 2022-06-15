@@ -1,17 +1,17 @@
-import React, { useState, useMemo } from 'react';
+import React, { useMemo, useState } from 'react';
 import KaTeX from 'katex';
-import 'katex/dist/katex.min.css?raw';
+import 'katex/dist/katex.min.css';
 
 type SchemaDefinition = {
   body?: string;
 };
 
-type PreviewProps = {
+export type LatexPreviewProps = {
   value?: SchemaDefinition;
   layout?: string;
 };
 
-const LatexPreview = (props: PreviewProps) => {
+const LatexPreview = (props: LatexPreviewProps) => {
   const latex = (props.value && props.value.body) || '';
   const isInline = props.layout === 'inline';
   const [html, setHtml] = useState<string>('');
@@ -25,10 +25,17 @@ const LatexPreview = (props: PreviewProps) => {
   };
 
   useMemo(createHtml, [latex, isInline]);
-  if (isInline) {
-    return <span dangerouslySetInnerHTML={{ __html: html }} />;
-  }
-  return <div dangerouslySetInnerHTML={{ __html: html }} />;
+  return (
+    <>
+      {isInline ? (
+        // eslint-disable-next-line react/no-danger
+        <span dangerouslySetInnerHTML={{ __html: html }} />
+      ) : (
+        // eslint-disable-next-line react/no-danger
+        <div dangerouslySetInnerHTML={{ __html: html }} />
+      )}
+    </>
+  );
 };
 
 export default LatexPreview;

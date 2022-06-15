@@ -1,7 +1,10 @@
 .DS_Store
-package-lock.json
+yarn.lock
 node_modules
 example/node_modules
 *.log
 .cache
 dist
+lib/
+.idea/
+.parcel-cache
