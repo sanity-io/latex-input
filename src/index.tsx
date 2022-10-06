@@ -1,34 +1,17 @@
 import LatexPreview, { LatexPreviewProps } from './components/LatexPreview';
-import { createPlugin, defineType, type PreviewValue } from 'sanity';
+import { createPlugin } from 'sanity';
+import { latexSchema, LatexDefinition } from './schema';
 
-export { LatexPreview, type LatexPreviewProps };
+export {
+  LatexPreview,
+  latexSchema,
+  type LatexPreviewProps,
+  type LatexDefinition,
+};
 
 export const latexInput = createPlugin({
   name: 'latex-block-plugin',
   schema: {
-    types: [
-      defineType({
-        type: 'object',
-        name: 'latex',
-        components: {
-          preview: LatexPreview,
-        },
-        fields: [
-          {
-            title: 'LaTeX content',
-            name: 'body',
-            type: 'text',
-          },
-        ],
-        preview: {
-          select: {
-            body: 'body',
-          },
-          prepare(selection: PreviewValue) {
-            return selection;
-          },
-        },
-      }),
-    ],
+    types: [latexSchema],
   },
 });
