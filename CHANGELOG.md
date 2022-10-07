@@ -5,6 +5,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.0-v3-studio.2](https://github.com/sanity-io/latex-input/compare/v0.3.0-v3-studio.1...v0.3.0-v3-studio.2) (2022-10-07)
+
+### Bug Fixes
+
+- **deps:** dev-preview.21 ([d1ae97f](https://github.com/sanity-io/latex-input/commit/d1ae97f1ca23e2d72e7e8a45c7286c974199b8b2))
+- **deps:** sanity 3.0.0-dev-preview.17 ([c9e98da](https://github.com/sanity-io/latex-input/commit/c9e98da53bf37d0a38164371b8f6176da54c5b6f))
+
 ## [0.3.0-v3-studio.1](https://github.com/sanity-io/latex-input/compare/v0.3.0-v3-studio.0...v0.3.0-v3-studio.1) (2022-09-14)
 
 ### Bug Fixes
