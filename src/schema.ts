@@ -1,4 +1,5 @@
 import { defineType, ObjectDefinition, type PreviewValue } from 'sanity';
+import { TextInput } from '@sanity/ui';
 import LatexPreview from './components/LatexPreview';
 
 const latexTypeName = 'latex' as const;
@@ -21,8 +22,10 @@ declare module '@sanity/types' {
 export const latexSchema = defineType({
   type: 'object',
   name: 'latex',
+  title: 'LaTeX block',
   components: {
     preview: LatexPreview,
+    input: TextInput,
   },
   fields: [
     {
