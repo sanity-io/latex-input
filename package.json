@@ -1,7 +1,7 @@
 {
   "name": "sanity-plugin-latex-input-next-compatible",
   "author": "Filipe <hello@filipesm.eu>",
-  "version": "0.4.1-v3-studio.1",
+  "version": "0.4.2-v3-studio.1",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -62,7 +62,6 @@
   },
   "dependencies": {
     "@sanity/incompatible-plugin": "^1.0.4",
-    "@sanity/ui": "^1.0.0-beta.30",
     "@types/katex": "^0.11.0",
     "@types/styled-components": "^5.1.25",
     "katex": "^0.11.1"
