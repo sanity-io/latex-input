@@ -43,6 +43,17 @@ export default createConfig({
 
 You may now use the type name `latex` in your schema, such as in portable text.
 
+Import the CSS file (`import 'katex/dist/katex.min.css?raw';`) in your app.
+
+E.g. for [Next.js](https://nextjs.org)
+
+```ts
+// pages/_app.tsx
+// app/layout.tsx
+
+import 'katex/dist/katex.min.css?raw';
+```
+
 ## Example schema definition for portable text
 
 ```

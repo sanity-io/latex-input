@@ -1,6 +1,5 @@
 import React, { useMemo, useState } from 'react';
 import KaTeX from 'katex';
-import 'katex/dist/katex.min.css';
 
 type SchemaDefinition = {
   body?: string;
