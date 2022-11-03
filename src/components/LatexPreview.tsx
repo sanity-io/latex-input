@@ -2,16 +2,16 @@ import React, { useMemo, useState } from 'react';
 import KaTeX from 'katex';
 import 'katex/dist/katex.min.css';
 
-type SchemaDefinition = {
+interface SchemaDefinition {
   body?: string;
-};
+}
 
-export type LatexPreviewProps = {
+export interface LatexPreviewProps {
   value?: SchemaDefinition;
   layout?: string;
-};
+}
 
-const LatexPreview = (props: LatexPreviewProps) => {
+export const LatexPreview = (props: LatexPreviewProps) => {
   const latex = (props.value && props.value.body) || '';
   const isInline = props.layout === 'inline';
   const [html, setHtml] = useState<string>('');
@@ -37,5 +37,3 @@ const LatexPreview = (props: LatexPreviewProps) => {
     </>
   );
 };
-
-export default LatexPreview;

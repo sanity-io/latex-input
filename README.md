@@ -32,7 +32,7 @@ Import and add the plugin to your studio config in sanity.config.ts (or .js):
 ```ts
 import { latexBlock } from "sanity-plugin-latex-input";
 
-export default createConfig({
+export default defineConfig({
   /* ... */
 
   plugins: [

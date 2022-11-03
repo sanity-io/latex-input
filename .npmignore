@@ -1,4 +1,9 @@
-.DS_Store
-/example
-/node_modules
 /test
+/coverage
+.editorconfig
+.eslintrc
+.gitignore
+.github
+.prettierrc
+.travis.yml
+.nyc_output
