@@ -2,13 +2,21 @@
   "name": "sanity-plugin-latex-input",
   "version": "0.3.0-v3-studio.4",
   "description": "> **NOTE**",
-  "author": "Sanity.io <hello@sanity.io>",
-  "license": "MIT",
+  "keywords": [
+    "sanity",
+    "plugin",
+    "latex"
+  ],
+  "homepage": "https://github.com/sanity-io/latex-input#readme",
+  "bugs": {
+    "url": "https://github.com/sanity-io/latex-input/issues"
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:sanity-io/latex-input.git"
   },
-  "source": "./src/index.ts",
+  "license": "MIT",
+  "author": "Sanity.io <hello@sanity.io>",
   "exports": {
     ".": {
       "types": "./lib/src/index.d.ts",
@@ -16,10 +24,12 @@
       "import": "./lib/index.esm.js",
       "require": "./lib/index.js",
       "default": "./lib/index.esm.js"
-    }
+    },
+    "./package.json": "./package.json"
   },
   "main": "./lib/index.js",
   "module": "./lib/index.esm.js",
+  "source": "./src/index.ts",
   "types": "./lib/src/index.d.ts",
   "files": [
     "src",
@@ -27,42 +37,24 @@
     "v2-incompatible.js",
     "sanity.json"
   ],
-  "engines": {
-    "node": ">=14.0.0"
-  },
   "scripts": {
-    "clean": "rimraf lib",
     "prebuild": "npm run clean && plugin-kit verify-package --silent && pkg-utils",
-    "build": "pkg-utils build",
-    "watch": "pkg-utils watch",
-    "link-watch": "plugin-kit link-watch",
-    "prepublishOnly": "npm run build",
+    "build": "pkg-utils build --strict",
+    "clean": "rimraf lib",
     "compile": "tsc --noEmit",
+    "format": "prettier src -w",
+    "link-watch": "plugin-kit link-watch",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "format": "prettier src -w",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prepublishOnly": "npm run build",
+    "watch": "pkg-utils watch"
   },
   "prettier": {
     "printWidth": 80,
     "semi": true,
     "singleQuote": true,
     "trailingComma": "es5"
-  },
-  "bugs": {
-    "url": "https://github.com/sanity-io/latex-input/issues"
-  },
-  "keywords": [
-    "sanity",
-    "plugin",
-    "latex"
-  ],
-  "homepage": "https://github.com/sanity-io/latex-input#readme",
-  "peerDependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "sanity": "dev-preview || 3.0.0-rc.0",
-    "styled-components": "^5.3.5"
   },
   "dependencies": {
     "@sanity/incompatible-plugin": "^1.0.4",
@@ -73,12 +65,12 @@
   "devDependencies": {
     "@commitlint/cli": "^17.2.0",
     "@commitlint/config-conventional": "^17.2.0",
-    "@sanity/pkg-utils": "^1.16.2",
-    "@sanity/plugin-kit": "^2.0.7",
+    "@sanity/pkg-utils": "^1.17.2",
+    "@sanity/plugin-kit": "^2.1.6",
     "@sanity/semantic-release-preset": "^2.0.2",
     "@types/jest": "^27.5.0",
-    "@types/react": "^18.0.0",
-    "@types/react-dom": "^18.0.0",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
     "@typescript-eslint/eslint-plugin": "^5.42.0",
     "@typescript-eslint/parser": "^5.42.0",
     "eslint": "^8.26.0",
@@ -90,12 +82,22 @@
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
+    "prettier-plugin-packagejson": "^2.3.0",
+    "react": "^18",
+    "react-dom": "^18",
     "rimraf": "^3.0.2",
-    "sanity": "dev-preview || 3.0.0-rc.0",
+    "sanity": "3.0.0-rc.0",
     "standard-version": "^9.3.2",
     "styled-components": "^5.3.5",
     "typescript": "^4.8.4"
+  },
+  "peerDependencies": {
+    "react": "^18",
+    "react-dom": "^18",
+    "sanity": "dev-preview || 3.0.0-rc.0",
+    "styled-components": "^5.3.5"
+  },
+  "engines": {
+    "node": ">=14"
   }
 }
