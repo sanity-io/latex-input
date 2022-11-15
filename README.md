@@ -1,10 +1,7 @@
 # LaTeX input for Sanity
 
-> **NOTE**
->
-> This is the **Sanity Studio v3 version** of sanity-plugin-latex-input.
->
-> For the v2 version, please refer to the [v2-branch](https://github.com/sanity-io/latex-input).
+> This is a **Sanity Studio v3** plugin.
+> For the v2 version, please refer to the [v2-branch](https://github.com/sanity-io/latex-input/tree/studio-v2).
 
 ## What is it?
 
