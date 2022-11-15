@@ -5,6 +5,12 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.1](https://github.com/sanity-io/latex-input/compare/v2.0.0...v2.0.1) (2022-11-15)
+
+### Bug Fixes
+
+- **docs:** updated install command ([2ffd0cf](https://github.com/sanity-io/latex-input/commit/2ffd0cf32c384f430ea743fd6f088c076568f6d7))
+
 ## [2.0.0](https://github.com/sanity-io/latex-input/compare/v1.0.0...v2.0.0) (2022-11-15)
 
 ### ⚠ BREAKING CHANGES
