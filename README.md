@@ -11,7 +11,7 @@ https://sanity.io
 ## Usage
 
 ```
-sanity install sanity-plugin-latex-input
+sanity install sanity-plugin-latex-input@studio-v2
 ```
 
 You may now use the type name `latex` in your schema, such as in portable text.
