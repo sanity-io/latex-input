@@ -12,13 +12,13 @@ sanity-plugin-latex-input adds support for `latex` schema type, so it can be use
 ## Installation
 
 ```sh
-npm install --save sanity-plugin-latex-input@studio-v3
+npm install --save sanity-plugin-latex-input
 ```
 
 or
 
 ```sh
-yarn add sanity-plugin-latex-input@studio-v3
+yarn add sanity-plugin-latex-input
 ```
 
 ## Usage
