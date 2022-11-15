@@ -1,5 +1,11 @@
 # LaTeX input for Sanity
 
+> **NOTE**
+>
+> This is the **Sanity Studio v2 version** of sanity-plugin-latex-input.
+>
+> For the v3 version, please refer to the [v3-branch](https://github.com/sanity-io/sanity-plugin-latex-input).
+
 https://sanity.io
 
 ## Usage

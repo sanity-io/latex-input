@@ -5,3 +5,6 @@ example/node_modules
 *.log
 .cache
 dist
+.idea
+*.iml
+lib
