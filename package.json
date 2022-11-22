@@ -1,25 +1,31 @@
 {
+  "name": "sanity-plugin-latex-input",
   "version": "1.0.1",
+  "keywords": [
+    "sanity",
+    "plugin",
+    "latex"
+  ],
+  "homepage": "https://github.com/sanity-io/latex-input#readme",
+  "bugs": {
+    "url": "https://github.com/sanity-io/latex-input"
+  },
   "license": "MIT",
+  "author": "Sanity.io <hello@sanity.io>",
   "main": "dist/index.js",
+  "module": "dist/sanity-plugin-latex-input.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist",
     "src",
     "sanity.json"
   ],
-  "engines": {
-    "node": ">=10"
-  },
   "scripts": {
-    "start": "tsdx watch",
     "build": "tsdx build",
-    "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
-    "prepare": "tsdx build"
-  },
-  "peerDependencies": {
-    "react": ">=16"
+    "prepare": "tsdx build",
+    "start": "tsdx watch",
+    "test": "tsdx test --passWithNoTests"
   },
   "husky": {
     "hooks": {
@@ -32,19 +38,12 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "sanity-plugin-latex-input",
-  "author": "Sanity.io <hello@sanity.io>",
-  "bugs": {
-    "url": "https://github.com/sanity-io/latex-input"
+  "dependencies": {
+    "@types/katex": "^0.11.0",
+    "katex": "^0.11.1"
   },
-  "keywords": [
-    "sanity",
-    "plugin",
-    "latex"
-  ],
-  "homepage": "https://github.com/sanity-io/latex-input#readme",
-  "module": "dist/sanity-plugin-latex-input.esm.js",
   "devDependencies": {
+    "@sanity/semantic-release-preset": "^2.0.2",
     "@types/react": "^16.9.34",
     "@types/react-dom": "^16.9.7",
     "husky": "^4.2.5",
@@ -54,8 +53,10 @@
     "tslib": "^1.11.2",
     "typescript": "^3.8.3"
   },
-  "dependencies": {
-    "@types/katex": "^0.11.0",
-    "katex": "^0.11.1"
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "engines": {
+    "node": ">=10"
   }
 }
