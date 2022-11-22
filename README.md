@@ -8,11 +8,20 @@
 
 https://sanity.io
 
-## Usage
+## Installation
 
 ```
-sanity install sanity-plugin-latex-input@studio-v2
+yarn install sanity-plugin-latex-input@studio-v2
 ```
+
+Next, add `"latex-input"` to `sanity.json` plugins array:
+```json
+"plugins": [
+  "latex-input"
+]
+```
+
+## Usage
 
 You may now use the type name `latex` in your schema, such as in portable text.
 
