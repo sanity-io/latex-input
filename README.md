@@ -11,7 +11,7 @@ https://sanity.io
 ## Installation
 
 ```
-yarn install sanity-plugin-latex-input@studio-v2
+yarn add sanity-plugin-latex-input@studio-v2
 ```
 
 Next, add `"latex-input"` to `sanity.json` plugins array:
