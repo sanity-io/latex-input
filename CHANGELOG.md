@@ -5,6 +5,12 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.4](https://github.com/sanity-io/latex-input/compare/v2.0.3...v2.0.4) (2022-12-06)
+
+### Bug Fixes
+
+- preview works in portable text and arrays in sanity 3.0.0+ ([d2cc3b6](https://github.com/sanity-io/latex-input/commit/d2cc3b6cf1bc54fbfa0fe9ee3f68dec231161e62))
+
 ### [2.0.3](https://github.com/sanity-io/latex-input/compare/v2.0.2...v2.0.3) (2022-11-25)
 
 ### Bug Fixes
