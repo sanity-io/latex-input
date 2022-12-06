@@ -1,4 +1,4 @@
-import { defineType, ObjectDefinition, type PreviewValue } from 'sanity';
+import { defineType, ObjectDefinition } from 'sanity';
 import { LatexPreview } from './components/LatexPreview';
 
 const latexTypeName = 'latex' as const;
@@ -21,7 +21,7 @@ declare module '@sanity/types' {
 export const latexSchema = defineType({
   type: 'object',
   name: 'latex',
-  ...({ components: { preview: LatexPreview } } as {}), //TODO revert this change when rc.1 is released
+  components: { preview: LatexPreview },
   fields: [
     {
       title: 'LaTeX content',
@@ -32,9 +32,6 @@ export const latexSchema = defineType({
   preview: {
     select: {
       body: 'body',
-    },
-    prepare(selection) {
-      return selection as unknown as PreviewValue;
     },
   },
 });

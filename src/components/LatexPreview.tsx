@@ -2,17 +2,13 @@ import React, { useMemo, useState } from 'react';
 import KaTeX from 'katex';
 import 'katex/dist/katex.min.css';
 
-interface SchemaDefinition {
-  body?: string;
-}
-
 export interface LatexPreviewProps {
-  value?: SchemaDefinition;
+  body?: string;
   layout?: string;
 }
 
 export const LatexPreview = (props: LatexPreviewProps) => {
-  const latex = (props.value && props.value.body) || '';
+  const latex = props?.body || '';
   const isInline = props.layout === 'inline';
   const [html, setHtml] = useState<string>('');
   const createHtml = () => {
