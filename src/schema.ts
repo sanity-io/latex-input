@@ -21,6 +21,7 @@ declare module '@sanity/types' {
 export const latexSchema = defineType({
   type: 'object',
   name: 'latex',
+  title: 'LaTeX',
   components: { preview: LatexPreview },
   fields: [
     {
