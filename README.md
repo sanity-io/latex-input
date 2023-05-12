@@ -27,7 +27,7 @@ yarn add sanity-plugin-latex-input
 Import and add the plugin to your studio config in sanity.config.ts (or .js):
 
 ```ts
-import { latexBlock } from "sanity-plugin-latex-input";
+import { latexInput } from "sanity-plugin-latex-input";
 
 export default defineConfig({
   /* ... */
