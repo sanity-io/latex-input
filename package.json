@@ -63,8 +63,8 @@
     "katex": "^0.16.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.2.0",
-    "@commitlint/config-conventional": "^17.2.0",
+    "@commitlint/cli": "^18.6.1",
+    "@commitlint/config-conventional": "^18.6.3",
     "@sanity/pkg-utils": "^2.4.9",
     "@sanity/plugin-kit": "^2.1.19",
     "@sanity/semantic-release-preset": "^2.0.2",
