@@ -60,7 +60,7 @@
     "@sanity/incompatible-plugin": "^1.0.4",
     "@types/katex": "^0.16.0",
     "@types/styled-components": "^5.1.25",
-    "katex": "^0.16.0"
+    "katex": "^0.16.10"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.2.0",
