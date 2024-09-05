@@ -86,9 +86,9 @@
     "react": "^18",
     "react-dom": "^18",
     "rimraf": "^3.0.2",
-    "sanity": "^3.0.1",
+    "sanity": "^3.35.0",
     "standard-version": "^9.3.2",
-    "styled-components": "^5.3.5",
+    "styled-components": "^6.1.0",
     "typescript": "^4.8.4"
   },
   "peerDependencies": {
