@@ -5,6 +5,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.5](https://github.com/sanity-io/latex-input/compare/v2.0.4...v2.0.5) (2024-11-06)
+
+### Bug Fixes
+
+- **deps:** update non-major ([#33](https://github.com/sanity-io/latex-input/issues/33)) ([a10a49a](https://github.com/sanity-io/latex-input/commit/a10a49aed83ad132cb41c9907b06a042089e4115))
+- remove unnecessary styled-components dependency ([#52](https://github.com/sanity-io/latex-input/issues/52)) ([d30fab7](https://github.com/sanity-io/latex-input/commit/d30fab745ac44bb5eafc6df20ffdc1093d1739fd))
+
 ### [2.0.4](https://github.com/sanity-io/latex-input/compare/v2.0.3...v2.0.4) (2022-12-06)
 
 ### Bug Fixes
