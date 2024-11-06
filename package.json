@@ -67,7 +67,7 @@
     "@sanity/pkg-utils": "^2.4.9",
     "@sanity/plugin-kit": "^2.1.19",
     "@sanity/semantic-release-preset": "^2.0.2",
-    "@types/jest": "^27.5.0",
+    "@types/jest": "^28.1.8",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@typescript-eslint/eslint-plugin": "^5.42.0",
