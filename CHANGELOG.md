@@ -5,6 +5,12 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.6](https://github.com/sanity-io/latex-input/compare/v2.0.5...v2.0.6) (2025-07-10)
+
+### Bug Fixes
+
+- **deps:** allow studio v4 in peer dep ranges ([#54](https://github.com/sanity-io/latex-input/issues/54)) ([223f2e4](https://github.com/sanity-io/latex-input/commit/223f2e4cc94f00bbd3de0160b9a2929e0d272a63))
+
 ## [2.0.5](https://github.com/sanity-io/latex-input/compare/v2.0.4...v2.0.5) (2024-11-06)
 
 ### Bug Fixes
