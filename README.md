@@ -1,6 +1,5 @@
 # LaTeX input for Sanity
 
-> This is a **Sanity Studio v3** plugin.
 > For the v2 version, please refer to the [v2-branch](https://github.com/sanity-io/latex-input/tree/studio-v2).
 
 ## What is it?
