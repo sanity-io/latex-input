@@ -5,6 +5,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.7](https://github.com/sanity-io/latex-input/compare/v2.0.6...v2.0.7) (2026-01-07)
+
+### Bug Fixes
+
+- add schema title ([#30](https://github.com/sanity-io/latex-input/issues/30)) ([dd03be5](https://github.com/sanity-io/latex-input/commit/dd03be5c521f3a5219122920e4f5df87908dc740))
+- update package.json and package-lock.json to support Sanity v5 ([#55](https://github.com/sanity-io/latex-input/issues/55)) ([88efc4e](https://github.com/sanity-io/latex-input/commit/88efc4ec408dcfa2e415d7e09e6885ac01c4fc48))
+
 ## [2.0.6](https://github.com/sanity-io/latex-input/compare/v2.0.5...v2.0.6) (2025-07-10)
 
 ### Bug Fixes
