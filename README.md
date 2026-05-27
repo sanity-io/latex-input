@@ -1,5 +1,11 @@
 # LaTeX input for Sanity
 
+> ⚠️ **Repository moved**
+>
+> `sanity-plugin-latex-input` is now maintained in the [sanity-io/plugins](https://github.com/sanity-io/plugins) monorepo at [`plugins/sanity-plugin-latex-input`](https://github.com/sanity-io/plugins/tree/main/plugins/sanity-plugin-latex-input).
+>
+> Please open issues and PRs in the monorepo. This repository is archived.
+
 > For the v2 version, please refer to the [v2-branch](https://github.com/sanity-io/latex-input/tree/studio-v2).
 
 ## What is it?
